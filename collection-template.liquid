@@ -89,7 +89,7 @@
     {% assign collection_product_count__product = collection.products.size %}
     {% assign divisible_by_three__product = collection_product_count__product | modulo:3 %}
     {% for product in collection.products %}
-      {% include 'product-grid-collage' %}
+      {% include 'product-grid-item' %}
     {% else %}
 
       {% if shop.products_count == 0 %}
